@@ -5,7 +5,7 @@ fn main() {
 }
 
 pub fn approx(num :f64) -> (i64,i64) {
-    let decimal = (num%1.0 * 1000000000000000.0).round() / 1000000000000000.0;
+    let decimal = ((num%1.0) * 1000000000000.0).round() / 1000000000000.0;
     let mut denomin = (0,1);
     let mut denomax = (1,1);
     let mut iter = 0;
